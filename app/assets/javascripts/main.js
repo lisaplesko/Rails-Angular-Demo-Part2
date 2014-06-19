@@ -8,10 +8,16 @@
 var ProductsApp = angular.module('ProductsApp', ['ngRoute']);
 
 ProductsApp.config(['$routeProvider', function($routeProvider){
-    // default route
-   $routeProvider.otherwise({
+  // Route for '/product'
+  $routeProvider.when('/product', {
+    templateUrl: '../assets/mainProduct.html',
+    controller: 'ProductCtrl'
+  });
+
+  // default route
+ $routeProvider.otherwise({
     templateUrl: '../assets/mainIndex.html',  // after controller, this template
     controller: 'IndexCtrl'   // invoke this controller
-    });
+  });
 }]);
 
