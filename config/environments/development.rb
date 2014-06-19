@@ -5,6 +5,8 @@ Rails.application.configure do
   # every request. This slows down response time but is perfect for development
   # since you don't have to restart the web server when you make code changes.
   config.cache_classes = false
+  # When you change a Ruby class or model in development mode --> class gets reloaded
+  # Don't want to do this in production class - because you don't load your site that much
 
   # Do not eager load code on boot.
   config.eager_load = false

@@ -13,6 +13,8 @@ require "sprockets/railtie"
 # you've limited to :test, :development, or :production.
 Bundler.require(*Rails.groups)
 
+
+# CREATES A NAMESPACE
 module Wdi10RailsDemoAngularProducts
   class Application < Rails::Application
     # Settings in config/environments/* take precedence over those specified here.
