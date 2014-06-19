@@ -3,10 +3,13 @@
 <head>
   <title>Wdi10RailsDemoAngularProducts</title>
   <%= stylesheet_link_tag    'application', media: 'all' %>
-  <%= javascript_include_tag 'application' %>
+  <%= javascript_include_tag 'application', controller_name %>
+                                            <!-- Look for javascript file with name + .js -->
   <%= csrf_meta_tags %>
 </head>
 <body>
+
+<h1> <%= controller_name %></h1>
 
 <%= yield %>
 
