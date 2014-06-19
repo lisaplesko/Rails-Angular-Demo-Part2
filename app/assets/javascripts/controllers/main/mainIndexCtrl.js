@@ -8,7 +8,7 @@ var IndexCtrl = function($scope, $location) {
     {name: "Fishcake", description: "Fish in a cake", price: 15.00},
     {name: "USB Plug", description: "For your phone", price: 11.99}
   ];
-  $scope.viewProduct = function(){
-    $location.url('/product');
+  $scope.viewProduct = function(productId){
+    $location.url('/product/' + productId);
   };
 };
