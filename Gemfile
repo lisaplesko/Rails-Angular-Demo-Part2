@@ -30,6 +30,7 @@ gem 'spring',        group: :development
 # Ruby gem to load the AngularJS assets
 # assets are the javascript
 gem 'angularjs-rails'
+gem 'active_model_serializers'
 
 # Use unicorn as the app server
 # gem 'unicorn'
